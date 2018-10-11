@@ -1,1 +1,30 @@
-/* You can style your links page here */
+li {
+    list-style: circle inside none;
+  padding-left: 60px;
+  
+}
+
+.week{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-left: 10px;
+  grid-column-gap: 50px;
+  
+  }
+
+ul{
+  text-shadow: 1px 2px 2px rgba(75,97,206,0.73);
+}
+
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+   filter:opacity(60%);
+}
