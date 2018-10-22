@@ -1,343 +1,306 @@
+body {
 
-header:after,
-nav:after,
-footer:after,
-.module-block:after,
-.gallery:after,
-.social:after {
-  content: ".";
-  display: block;
-	height: 0;
-	clear: both;
-	visibility: hidden;
 }
 
+/* ----------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* Top navigation */
+#logo {
+  float: left;
+  /* background-position: left top; */
+}
+
+#nav {
+  background: #3e1404;
+  background-color: none;
+  width: 100%;
+  height: 130px;
+  top: -10px;
+  /* box-shadow: 0px 1px 10px #5e5e5e; */
+  position: relative;
+  padding:10px;
+}
+
+#navigation {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+}
+#nav a {
+  font-size: 3.5em;
+  text-transform: uppercase;
+  /* text-shadow: 0 0 0.3em black; */
+  font-weight: bold;
+  font-family: "Amatic SC", cursive;
+  text-decoration: none;
+  color: orange;
+  /* opacity: 0.26; */
+  padding: 60px 50px 30px 50px;
+}
+#nav a:hover {
+  opacity: 0.36;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* Section 1 */
+.container1 {
+  /* width:100%;
+    height:90%; */
+  top: 133px;
+  right: 0px;
+  left: 0px;
+  padding: 200px;
+  background-color: #bc986a;
+  position: absolute;
+}
+
+#section1_image {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.c1text {
+  font-family: "Reenie Beanie", cursive;
+  color: black;
+  position: absolute;
+  top: -90px;
+  left: -600px;
+  font-size: 80px;
+  overflow: auto;
+}
+
+.w3-btn {
+  background-color: #3e1404;
+  border: none;
+  color: orange;
+  padding: 15px 50px;
+  text-align: center;
+  font-family: "Reenie Beanie", cursive;
+  font-size: 80px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: absolute;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  top: 150px;
+  left: -600px;
+  overflow: auto;
+  border-radius: 25px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+/* Section2 */
+
+.container2 {
+  /* width:100%;
+      height:90%; */
+  top: 610px;
+  right: 0px;
+  left: 0px;
+  padding: 250px;
+  background-color: none;
+  position: absolute;
+}
+
+.c2text {
+  top: 0px;
+  padding: 20px;
+  left: 600px;
+  color: red;
+  position: absolute;
+  font-family: "Reenie Beanie", cursive;
+  font-size: 75px;
+}
+
+#cert {
+  top: -50px;
+  position: absolute;
+  left: 200px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+/* Section3 */
+
+.container3 {
+  /* width:100%;
+      height:90%; */
+  top: 700px;
+  left: 0px;
+  right: 0px;
+  padding: 350px;
+  background-color: #964315;
+  position: relative;
+}
+
+.c3text {
+  top: 40px;
+  padding: 20px;
+  left: 0px;
+  color: white;
+  position: absolute;
+  font-family: "Amatic SC", cursive;
+  font-size: 90px;
+  font-display: bold;
+}
 
 * {
-	/* Universal reset: */
-	margin:0;
-	padding:0;
+  box-sizing: border-box;
 }
 
-
-body {
-	font-size: 16px;
-	line-height: 1.5;
-	font-family: 'Josefin Sans', sans-serif;
-	color: #272727;
-	background: rgb(247,251,252);
-	background: -moz-linear-gradient(top,  rgba(247,251,252,1) 0%, rgba(217,237,242,1) 40%, rgba(173,217,228,1) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(247,251,252,1)), color-stop(40%,rgba(217,237,242,1)), color-stop(100%,rgba(173,217,228,1)));
-	background: -webkit-linear-gradient(top,  rgba(247,251,252,1) 0%,rgba(217,237,242,1) 40%,rgba(173,217,228,1) 100%);
-	background: -o-linear-gradient(top,  rgba(247,251,252,1) 0%,rgba(217,237,242,1) 40%,rgba(173,217,228,1) 100%);
-	background: -ms-linear-gradient(top,  rgba(247,251,252,1) 0%,rgba(217,237,242,1) 40%,rgba(173,217,228,1) 100%);
-	background: linear-gradient(top,  rgba(247,251,252,1) 0%,rgba(217,237,242,1) 40%,rgba(173,217,228,1) 100%);
+.row {
+  top: 250px;
+  position: absolute;
+  left: 0px;
 }
 
-header, footer, article, section, nav, {
-	/* Giving a display value to the HTML5 rendered elements: */
-	display:block;
+.row > .column {
+  padding: 0 8px;
 }
 
-img { 
-	border-radius: 100%; 
-	max-width: 100%; 
-	display: block;
+.column {
+  float: left;
+  width: 25%;
 }
 
-a {
-	color:#D24655;
-	text-decoration:none;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-a:hover, a:focus { /* when you declare a hover state, make sure you declare a focus state as well */
-	color: #000;
+img.hover-shadow {
+  transition: 0.3s;
 }
 
-a img {
-	border:none;
-}
-
-
-h1 {
-	font-size: 50px;
- 	margin: 0;
-	color: #000;
-	font-weight: normal; 
-	line-height: 1;
-}
-
-h2 {
-	font-size: 24px;
-	letter-spacing:2px;
-	text-transform: uppercase;
-	font-weight: normal; 
-	margin: 0 0 24px; 
-	line-height: 1;
-}
-
-
-h3 {
-	font-size: 30px;
-	font-weight: normal; 
-	margin: 0 0 24px; 
-	line-height: 1;
-}
-
-p {
-	font-family: 'Vollkorn', serif;
-	margin-bottom: 24px;
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
 
-/*-------------------------------------------
+/* ---------------------------------------------------------------------------------------------------------------- */
 
-    	Header
--------------------------------------------*/
-header { margin: 20px 40px 60px; }
+/* Section4 */
 
-header div { 
-	margin-top: 40px; 
-	width: 60%; 
-	float: left; 
+.container4 {
+    /* width:100%;
+        height:90%; */
+    top: 700px;
+    left: 0px;
+    right: 0px;
+    padding: 400px;
+    background-color: #FCF5F5;
+    position: relative;
+  }
+
+
+  .c4text {
+    top: 40px;
+    padding: 20px;
+    left: 0px;
+    color: red;
+    position: absolute;
+    font-family: "Reenie Beanie", cursive;
+    font-size: 90px;
+    text-align:center;
+    font-display: bold;
+  }
+
+  .snack{
+      position: absolute;
+      top:350px;
+      left:0px;
+  }
+
+  .column_snack {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
 }
 
-header p { 
-	color: #272727; 
-	font-size: 18px;
-	margin: 0;
-	font-family: 'Josefin Sans', sans-serif;
+/* Clearfix (clear floats) */
+.snack::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
-nav { 
-	float: right; 
-	width: 40%;
-}
+img.hover-snack {
+    transition: 0.3s;
+  }
+  
+  .hover-snack:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
 
-
-nav ul { float: right; }
-
-nav li {
-	float: left;
-	list-style: none;
-	padding: 4px 0;
-}
-
-nav a {
-	color:#565656;
-	display: block;
-	font-size:12px;
-	margin:5px 2px;
-	padding:10px 10px 8px;
-	text-transform:uppercase;
-	font-weight: bold;
-	letter-spacing: 1px;
-	border-right: 1px dashed rgba(0, 0, 0, .3);
-}
-
-nav li:last-child a { border-right: none; }
-
-
-nav a:hover, nav a:focus {
-	text-decoration:none;
-	background-color:#f0f0f0;
-	border-color: transparent;
-}
-
-
-/*-------------------------------------------
-
-    	Footer
--------------------------------------------*/
-
-footer {
-	padding: 40px;
-	background: #fff;
-}
-
-.col { 
-	float: left;
-	width: 21%;
-	margin: 0 5% 40px 0;
-}
-
-.col:last-of-type { 
-	margin-right: 0;
-}
-
-footer h2 { font-size: 18px; margin-bottom: 40px;}
-
-footer h3 { 
-	margin-bottom: 10px;
-	padding-bottom: 10px;
-	border-bottom: 1px dashed rgba(0,0,0,.3);
-	font-size: 18px;
-}
-
-footer  ul {
-	margin-left: 20px;
-}
-
-footer  li { 
-	color: rgba(0,0,0,.1); /* border color */
-}
-
-footer a { font-size: 14px; }
-
-footer p {
-	margin-bottom: 0;
-	clear: both;
-	font-family: 'Josefin Sans', sans-serif;
-	text-align: center;
-}
-
-.up {
-	margin-top: 50px; 
-}
-
-.up a { 
-	background: rgba(0, 0, 0, .25);
-	font-size: 30px;
-	padding: 12px 10px;
-	border-radius: 10px;
-	text-shadow: 1px 1px 2px #fff;
-}
-
-.up a:hover, .up a:focus { 
-	color: rgba(0, 0, 0, .45);
-	text-decoration: none;
-
-}
+  .button-snack {
+    background-color: #3e1404;
+    border: none;
+    color: orange;
+    padding: 15px 50px;
+    text-align: center;
+    font-family: "Reenie Beanie", cursive;
+    font-size: 80px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: absolute;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top: -50px;
+    
+    left: 600px;
+    overflow: auto;
+  }
 
 
 
-/*-------------------------------------------
+  /* --------------------------------------------------------------------------------------------------------------------- */
+  /* Footer */
 
-    	ABOUT
--------------------------------------------*/
+  #red{
+      position:absolute;
+       top: 2775px;
+    border-top: solid #A44B4B;
+    border-width: 15px;
+    background: #2E2E2E; 
+    position:absolute; 
 
-img.right {
-	float: right;
-	margin: 0 0 20px 20px;
-}
-
-.social li { 
-	float: left;
-	list-style: none;
-}
-
-
-.social a { 
-	display: block;
-	font-size:12px;
-	margin:5px 2px;
-	padding:10px 10px 8px;
-	text-transform:uppercase;
-	font-weight: bold;
-	letter-spacing: 1px;
-	border-right: 1px dashed rgba(0, 0, 0, .1); 
-}
-
-.social li:last-child a { border: none; }
-
-
-
-/*-------------------------------------------
-
-    	Posts
--------------------------------------------*/
-
-.post { 
-	position: relative;
-	margin-bottom: 50px;
-	padding-left: 24%;
-}
-
-.post h3 { 
-	margin-bottom: 10px;
-}
-
-.post img { 
-	width: 20%; 
-	position: absolute;
-	left: 0;
-	top: 0;
-	border-radius: 0;
-}
-
-.date { 
-	display: block; 
-	margin-bottom: 10px; 
-}
-
-
-/*-------------------------------------------
-
-    	Gallery
--------------------------------------------*/
-
-.gallery li {
-	float: left;
-	list-style: none;
-	width: 21%;
-	margin: 0 5.3333% 20px 0;
-}
-
-.gallery li:nth-child(4n) {
-	margin-right: 0;
-}
-
-.gallery a {
- 	display: block;	
-}
-
-.gallery a img { 
-  -webkit-transition: all 0.5s ease-in-out; 
-     -moz-transition: all 0.5s ease-in-out; 
-      -ms-transition: all 0.5s ease-in-out; 
-       -o-transition: all 0.5s ease-in-out; 
-          transition: all 0.5s ease-in-out;
-
-}
-
-.gallery a:hover img, .gallery a:focus img { 
-	-webkit-transform: scale(1.1);  /* Saf3.1+, Chrome */
-     -moz-transform: scale(1.1);  /* FF3.5+ */
-      -ms-transform: scale(1.1);  /* IE9 */
-       -o-transform: scale(1.1);  /* Opera 10.5+ */
-          transform: scale(1.1);
-}
-
-
-
-/*-------------------------------------------
-
-    	General
--------------------------------------------*/
-
-.page-wrap {
-	max-width:960px;
-	padding: 0 20px; 
-	margin:0 auto; /* center the content by defining a width and using this margin value */
-}
-
-.module-block {
-	background-color: #fff;
-	margin:0 0 70px 0;
-	padding: 40px;
-	-webkit-box-shadow: inset 0px 0px 13px rgba(68, 68, 68, 0.1); 
-	-moz-box-shadow: inset 0px 0px 13px rgba(68, 68, 68, 0.1); 
-	box-shadow: inset 0px 0px 13px rgba(68, 68, 68, 0.1);
-	border: 1px solid rgba(0, 0, 0, .1);
-}
-
-.module-block h2 { 
-	padding-bottom: 30px;
-	margin-bottom: 30px;
-	border-bottom: 1px dashed rgba(0,0,0,.3);
-}
+    bottom:0; 
+    height:100%;
+    width:100%; 
+    height:250px; 
+  }
+  
+  .text {
+    color: #964315;
+    font-family: "Amatic SC", cursive;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .text2 {
+    color: #964315;
+    font-family: "Amatic SC", cursive;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  
+  #page-footer {
+    display: none !important;
+  }
