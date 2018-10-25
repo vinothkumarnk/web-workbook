@@ -1,1 +1,306 @@
+body {
+  width: 100%;
+}
 
+/* ----------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* Top navigation */
+#logo {
+  float: left;
+  /* background-position: left top; */
+}
+
+#nav {
+  background: #3e1404;
+  background-color: none;
+  width: 100%;
+  height: 130px;
+  top: -10px;
+  /* box-shadow: 0px 1px 10px #5e5e5e; */
+  position: relative;
+  padding:10px;
+}
+
+#navigation {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+}
+#nav a {
+  font-size: 3.5em;
+  text-transform: uppercase;
+  /* text-shadow: 0 0 0.3em black; */
+  font-weight: bold;
+  font-family: "Amatic SC", cursive;
+  text-decoration: none;
+  color: orange;
+  /* opacity: 0.26; */
+  padding: 60px 50px 30px 50px;
+}
+#nav a:hover {
+  opacity: 0.36;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* Section 1 */
+.container1 {
+  /* width:100%;
+    height:90%; */
+  top: 133px;
+  right: 0px;
+  left: 0px;
+  padding: 200px;
+  background-color: #bc986a;
+  position: absolute;
+}
+
+#section1_image {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.c1text {
+  font-family: "Reenie Beanie", cursive;
+  color: black;
+  position: absolute;
+  top: -90px;
+  left: -600px;
+  font-size: 80px;
+  overflow: auto;
+}
+
+.w3-btn {
+  background-color: #3e1404;
+  border: none;
+  color: orange;
+  padding: 15px 50px;
+  text-align: center;
+  font-family: "Reenie Beanie", cursive;
+  font-size: 80px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: absolute;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  top: 150px;
+  left: -600px;
+  overflow: auto;
+  border-radius: 25px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+/* Section2 */
+
+.container2 {
+  /* width:100%;
+      height:90%; */
+  top: 610px;
+  right: 0px;
+  left: 0px;
+  padding: 250px;
+  background-color: none;
+  position: absolute;
+}
+
+.c2text {
+  top: 0px;
+  padding: 20px;
+  left: 600px;
+  color: red;
+  position: absolute;
+  font-family: "Reenie Beanie", cursive;
+  font-size: 75px;
+}
+
+#cert {
+  top: -50px;
+  position: absolute;
+  left: 200px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+/* Section3 */
+
+.container3 {
+  /* width:100%;
+      height:90%; */
+  top: 700px;
+  left: 0px;
+  right: 0px;
+  padding: 350px;
+  background-color: #964315;
+  position: relative;
+}
+
+.c3text {
+  top: 40px;
+  padding: 20px;
+  left: 0px;
+  color: white;
+  position: absolute;
+  font-family: "Amatic SC", cursive;
+  font-size: 90px;
+  font-display: bold;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  top: 250px;
+  position: absolute;
+  left: 0px;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+/* Section4 */
+
+.container4 {
+    /* width:100%;
+        height:90%; */
+    top: 700px;
+    left: 0px;
+    right: 0px;
+    padding: 400px;
+    background-color: #FCF5F5;
+    position: relative;
+  }
+
+
+  .c4text {
+    top: 40px;
+    padding: 20px;
+    left: 0px;
+    color: red;
+    position: absolute;
+    font-family: "Reenie Beanie", cursive;
+    font-size: 90px;
+    text-align:center;
+    font-display: bold;
+  }
+
+  .snack{
+      position: absolute;
+      top:350px;
+      left:0px;
+  }
+
+  .column_snack {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+/* Clearfix (clear floats) */
+.snack::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img.hover-snack {
+    transition: 0.3s;
+  }
+  
+  .hover-snack:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+
+  .button-snack {
+    background-color: #3e1404;
+    border: none;
+    color: orange;
+    padding: 15px 50px;
+    text-align: center;
+    font-family: "Reenie Beanie", cursive;
+    font-size: 80px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: absolute;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top: -50px;
+    
+    left: 600px;
+    overflow: auto;
+  }
+
+
+
+  /* --------------------------------------------------------------------------------------------------------------------- */
+  /* Footer */
+
+  #red{
+      position:absolute;
+       top: 2775px;
+    border-top: solid #A44B4B;
+    border-width: 15px;
+    background: #2E2E2E; 
+    position:absolute; 
+
+    bottom:0; 
+    height:100%;
+    width:100%; 
+    height:250px; 
+  }
+  
+  .text {
+    color: #964315;
+    font-family: "Amatic SC", cursive;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .text2 {
+    color: #964315;
+    font-family: "Amatic SC", cursive;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  
+  #page-footer {
+    display: none !important;
+  }

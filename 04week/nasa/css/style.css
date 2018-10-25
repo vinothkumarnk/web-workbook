@@ -1,0 +1,57 @@
+#flexbox {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  background-image: url(../img/nasa-background.jpg);
+  width: 850px;
+  height: 450px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* enter code here  */
+}
+
+#nasa {
+  color: white;
+}
+
+#flexbox2 {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  position: relative;
+  top: 20px;
+  background-color: rgb(241, 237, 237);
+  width: 850px;
+  height: 324px;
+  justify-content: space-around;
+
+  /* enter code here  */
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  list-style-position: outside;
+}
+
+#flexbox21 {
+  margin: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+#flexbox22 {
+  margin: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+#flexbox23 {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
