@@ -1,1 +1,418 @@
+body {
+    /* width: 100%; */
+}
 
+.box {
+    background: #eeeeee;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.box:nth-child(odd) {
+    background: #dddddd;
+}
+
+.box:nth-child(3n) {
+    background: #cccccc;
+}
+
+/* Box 1 area coding */
+/* -------------------------------------------------------------------------------- */
+.box1 {
+    grid-area: box1;
+}
+
+
+.imbox1 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border-radius: 50%;
+    border: solid black;
+    display: inline-block;
+}
+
+/* --------grid coding */
+.ibox1 {
+    grid-area: ibox1;
+    /* border: solid black; */
+    margin: 10px;
+    padding: 0px;
+}
+
+
+
+.lbox1 {
+    grid-area: lbox1;
+    margin: 10px;
+    padding: 0px;
+}
+
+
+.bbox1 {
+    grid-area: bbox1;
+    /* background: #eeeeee; */
+    padding: 0px;
+    /* border: 1px solid black; */
+    margin: 5px;
+}
+
+.tbox1 {
+    grid-area: tbox1;
+    background: #eeeeee;
+    padding: 0px;
+    border: 1px solid black;
+    margin: 5px;
+    height: 50%;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+.box2 {
+    grid-area: box2;
+}
+
+
+
+/* Box 3 area coding */
+/* -------------------------------------------------------------------------------- */
+
+
+.imbox3 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+.lbox1 {
+    /* border: solid black; */
+}
+
+.ibox3 {
+    grid-area: ibox3;
+    /* border: solid black; */
+    margin: 10px;
+    padding: 0px;
+    height: 200px;
+    /* max-height:100%; */
+    /* border: solid black; */
+}
+
+
+/* ----------------------------------------------------------------------------------- */
+
+
+
+/* Box 4 area coding */
+/* -------------------------------------------------------------------------------- */
+
+
+.imbox3 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+.lbox1 {
+    /* border: solid black; */
+}
+
+.ibox4 {
+    grid-area: ibox4;
+    /* border: solid black; */
+    margin: 10px;
+    padding: 0px;
+    height: 150px;
+    /* max-height:100%; */
+    /* border: solid black; */
+}
+
+
+/* ----------------------------------------------------------------------------------- */
+
+
+
+
+
+.box3 {
+    grid-area: box3;
+}
+
+.box4 {
+    grid-area: box4;
+}
+
+.box5 {
+    grid-area: box5;
+}
+
+.box6 {
+    grid-area: box6;
+}
+
+.box7 {
+    grid-area: box7;
+}
+
+.box8 {
+    grid-area: box8;
+}
+
+.box9 {
+    grid-area: box9;
+}
+
+.box10 {
+    grid-area: box10;
+}
+
+/* Extra Small and up (Portrait Phones) */
+
+/* .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "box1"
+      "box2"
+      "box3"
+      "box4"
+      "box5"
+      "box6"
+      "box7"
+      "box8";
+  } */
+
+
+/* Small and up (Landscape Phones) */
+@media (min-width: 300px) {
+    .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "box1 box1"
+      "box2 box2"
+      "box3 box3"
+      "box4 box4"
+      "box5 box5";
+  }
+
+  .box1 {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 0.5fr;
+    grid-template-areas:
+        "ibox1 ibox1 ibox1"
+        "lbox1 lbox1 lbox1"
+        "bbox1 bbox1 tbox1";
+}
+
+.box2 {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 0.5fr;
+    grid-template-areas:
+        "ibox1 ibox1 ibox1"
+        "lbox1 lbox1 lbox1"
+        "bbox1 bbox1 tbox1";
+}
+
+
+.box3 {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 0.5fr;
+    grid-template-areas:
+        "ibox3 ibox3 ibox3"
+        "lbox1 lbox1 lbox1"
+        "bbox1 bbox1 tbox1";
+}
+
+
+.box4  {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 0.5fr;
+    grid-template-areas:
+        "ibox4 ibox4 ibox4"
+        "lbox1 lbox1 lbox1"
+        "bbox1 bbox1 tbox1";
+
+}
+
+  .box5, .box6, .box7, .box8, .box9, .box10 {
+    display: none;
+}
+
+}
+
+
+/* ----------------------------------------------------------------------------------- */
+
+/* Medium and up (Tablets) */
+ @media (min-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "box1 box1 box1 box1"
+            "box2 box2 box3 box3"
+            "box4 box4 box4 box4";
+    }
+
+    .box1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "ibox1 ibox1 ibox1 ibox1"
+            "lbox1 lbox1 lbox1 lbox1"
+            "bbox1 bbox1 bbox1 tbox1";
+    }
+    
+    .box2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "ibox1 ibox1 ibox1 ibox1"
+            "lbox1 lbox1 lbox1 lbox1"
+            "bbox1 bbox1 bbox1 tbox1";
+    }
+
+
+    .box3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "ibox3 ibox3 ibox3 ibox3"
+            "lbox1 lbox1 lbox1 lbox1"
+            "bbox1 bbox1 bbox1 tbox1";
+    }
+
+
+    .box4  {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "ibox4 ibox4 ibox4 ibox4"
+            "lbox1 lbox1 lbox1 lbox1"
+            "bbox1 bbox1 bbox1 tbox1";
+
+    }
+
+    .box5, .box6, .box7, .box8, .box9, .box10 {
+        display: none;
+    }
+
+  } 
+
+
+
+  /* ------------------------------------------------------------------------------- */
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "box1 box1 box2 box2"
+            "box3 box3 box4 box5"
+            "box3 box3 box6 box6"
+            "box7 box8 box9 box10";
+        /* "box1 box1 box2"
+        "box3 box4 box2"
+        "box6 box5 box5"
+        "box6 box7 box8"; */
+    }
+
+    .box1,
+    .box2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "ibox1 ibox1 lbox1 lbox1"
+            "ibox1 ibox1 bbox1 tbox1";
+    }
+
+    .box3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1.5fr 0.5fr;
+        grid-template-areas:
+            "ibox3 ibox3 ibox3 ibox3"
+            "lbox1 lbox1 lbox1 lbox1"
+            "lbox1 lbox1 lbox1 lbox1"
+            "lbox1 lbox1 lbox1 lbox1"
+            "lbox1 lbox1 lbox1 lbox1"
+            "lbox1 lbox1 lbox1 lbox1"
+            "lbox1 lbox1 lbox1 lbox1"
+            "lbox1 lbox1 lbox1 lbox1"
+            "lbox1 lbox1 lbox1 lbox1"
+            "lbox1 lbox1 lbox1 lbox1"
+
+            "bbox1 bbox1 bbox1 tbox1";
+
+    }
+
+
+    .box4  {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "ibox4 ibox4 ibox4"
+            "lbox1 lbox1 lbox1"
+            "bbox1 bbox1 tbox1";
+
+    }
+
+    .box5 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "ibox4 ibox4 ibox4"
+            "lbox1 lbox1 lbox1"
+            "bbox1 bbox1 tbox1";
+
+    }
+
+    .box6 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "ibox4 ibox4 ibox4 ibox4"
+            "lbox1 lbox1 lbox1 lbox1"
+            "bbox1 bbox1 bbox1 tbox1";
+
+    }
+
+
+    .box7, .box8, .box9, .box10{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "ibox4 ibox4 ibox4"
+            "lbox1 lbox1 lbox1"
+            "bbox1 bbox1 tbox1";
+
+    }
+
+    /* .box2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "ibox1 ibox1 lbox1 lbox1"
+        "ibox1 ibox1 bbox1 tbox1";
+    } */
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+@media (min-width: 1200px) {
+    /* Just use the same as Large above  */
+}
