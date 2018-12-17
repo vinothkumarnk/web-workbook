@@ -196,7 +196,7 @@
             cursor: pointer;
         }
 
-        #mybut {
+        #mybut, #mybut1 {
             color: #FFF;
             text-decoration: none;
             width: 30%;

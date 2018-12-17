@@ -1,6 +1,7 @@
 $(document).ready(function () {
     $('#loader').addClass('loader');
     $('#buttons').hide();
+    $('#mybut1').hide();
     back();
 
     function back() {
@@ -24,7 +25,7 @@ $(document).ready(function () {
         $('#backstart').text('3').show().css("display", "inline");
         $('#hercount').text('0');
         $('#mycount').text('0');
-        $('#timecount').text('10');
+        $('#timecount').text('20');
         $('#winner').text('');
         $("#mybut").show();
         $("#mybut").click(function () {
@@ -36,13 +37,67 @@ $(document).ready(function () {
 
    function run() {
         var mycount = 0;
+        var c = 0;
+        var b = 10;
+
         var timecount = 20;
         var interval;
         var compcount = 0;
+
         $("#mybut").click(function () {
+            
+            if (c>0){
+                mycount = mycount + b;
+                c=0;
+            }
             mycount++;
             $('#mycount').text(mycount);
+
+
+            if (mycount == 10){
+              
+                $('#mybut1').show();
+            }
+
+
+            $("#mybut1").click(function () {
+                
+                if (mycount == 40){ b= 20;}
+                if (mycount ==60){ b = 40;}
+                if (mycount ==100){ b = 60;}
+                c = mycount + b;
+              
+                $('#mycount').text(c);
+                $('#mybut1').hide();
+                
+            });
+
+            if (mycount == 40){
+                
+                $('#mybut1').show();
+            }
+
+            if (mycount == 60){
+                
+                $('#mybut1').show();
+            }
+            if (mycount == 100){
+                
+                $('#mybut1').show();
+            }
+
         });
+
+
+        
+
+
+
+
+
+
+
+
         $('#statistic').addClass('hide');
 
 
@@ -71,7 +126,7 @@ $(document).ready(function () {
             if (timecount == 0) {
                 clearInterval(intervalcomp);
             }
-        }, 130);
+        }, 165);
     }
 });
 
